@@ -1,0 +1,17 @@
+   +------------------+      uses       +------------------+
+   |    TerminalUI    |<----------------|       Game       |
+   |   (I/O layer)    |                 |   (Controller)   |
+   +------------------+                 +------------------+
+            |                                  |   |
+            |                                  |   |
+            | reads                manipulates |   | updates
+            v                                  v   v
++-----------+-----------+  +-------------------+-+-+------------+
+|         Board         |  |        Deck         |    Player    |
+| (model: grid of Cell) |  |(collection of Stone)| (name,score) |
++-----------+-----------+  +----------+----------+--------------+
+            | contains                | contains
+            v                         v
+         +------+                 +-------+
+         | Cell |                 | Stone |
+         +------+                 +-------+
