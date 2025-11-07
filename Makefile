@@ -1,7 +1,7 @@
 # Makefile for LabWork2 TellStones project
 CXX = g++
 CXXFLAGS = -g -Wall -Werror -Wpedantic -Iinclude
-TESTFLAGS = -lgtest -lgmock -pthread
+TESTFLAGS = -lgtest -lgtest_main -lpthread
 
 TARGET = run
 TEST_TARGET = run_tests
